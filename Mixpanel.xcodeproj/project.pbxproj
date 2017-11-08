@@ -58,6 +58,15 @@
 		51D221011C595EB1003ECFB3 /* MPFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F9F7F11C2B8BFC00783DDB /* MPFoundation.h */; };
 		51F308831C86881900614A13 /* MPSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 51F308791C86881900614A13 /* MPSwizzle.h */; };
 		51F308841C86881900614A13 /* MPSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F3087A1C86881900614A13 /* MPSwizzle.m */; };
+		6DAFFBB11FB3B14700ACE88A /* MPTweak.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C170CA21A4A035F00D9E0F2 /* MPTweak.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DAFFBB21FB3B14700ACE88A /* MPTweak.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C170CA31A4A035F00D9E0F2 /* MPTweak.m */; };
+		6DAFFBB31FB3B14700ACE88A /* MPTweakInline.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C170CA41A4A035F00D9E0F2 /* MPTweakInline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DAFFBB41FB3B14700ACE88A /* MPTweakInline.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C170CA51A4A035F00D9E0F2 /* MPTweakInline.m */; };
+		6DAFFBB51FB3B14700ACE88A /* MPTweakInlineInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C170CA61A4A035F00D9E0F2 /* MPTweakInlineInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DAFFBB61FB3B14700ACE88A /* MPTweakStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C170CA71A4A035F00D9E0F2 /* MPTweakStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DAFFBB71FB3B14700ACE88A /* MPTweakStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C170CA81A4A035F00D9E0F2 /* MPTweakStore.m */; };
+		6DAFFBB81FB3B14700ACE88A /* _MPTweakBindObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C170C471A4A035F00D9E0F2 /* _MPTweakBindObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DAFFBB91FB3B14700ACE88A /* _MPTweakBindObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C170C481A4A035F00D9E0F2 /* _MPTweakBindObserver.m */; };
 		7C170CC41A4A035F00D9E0F2 /* _MPTweakBindObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C170C471A4A035F00D9E0F2 /* _MPTweakBindObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C170CC51A4A035F00D9E0F2 /* _MPTweakBindObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C170C481A4A035F00D9E0F2 /* _MPTweakBindObserver.m */; };
 		7C170CC81A4A035F00D9E0F2 /* Mixpanel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C170C4B1A4A035F00D9E0F2 /* Mixpanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -978,14 +987,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DAFFBB61FB3B14700ACE88A /* MPTweakStore.h in Headers */,
+				6DAFFBB51FB3B14700ACE88A /* MPTweakInlineInternal.h in Headers */,
 				E1C2BE601CFD6A010052172F /* Mixpanel.h in Headers */,
 				E123C47E1D1342120015B425 /* MixpanelPeople.h in Headers */,
 				E1C2BE661CFD6A010052172F /* UIImage+MPImageEffects.h in Headers */,
 				E1C2BE791CFD6A010052172F /* NSInvocation+MPHelpers.h in Headers */,
 				E1C2BE7A1CFD6A010052172F /* UIImage+MPAverageColor.h in Headers */,
+				6DAFFBB31FB3B14700ACE88A /* MPTweakInline.h in Headers */,
+				6DAFFBB81FB3B14700ACE88A /* _MPTweakBindObserver.h in Headers */,
 				E12FA3B41D4C0F68009DF414 /* MPNetwork.h in Headers */,
 				E1C2BE7B1CFD6A010052172F /* MPLogger.h in Headers */,
 				E1C2BE801CFD6A010052172F /* MPFoundation.h in Headers */,
+				6DAFFBB11FB3B14700ACE88A /* MPTweak.h in Headers */,
 				E1C2BE8F1CFD6A010052172F /* UIColor+MPColor.h in Headers */,
 				E1C2BE9D1CFD6A010052172F /* MixpanelExceptionHandler.h in Headers */,
 			);
@@ -1256,8 +1270,12 @@
 				E1C2BE261CFD6A010052172F /* Mixpanel.m in Sources */,
 				E1C2BE271CFD6A010052172F /* UIImage+MPAverageColor.m in Sources */,
 				517ABB741D14C36600FF8061 /* MPNetwork.m in Sources */,
+				6DAFFBB71FB3B14700ACE88A /* MPTweakStore.m in Sources */,
+				6DAFFBB91FB3B14700ACE88A /* _MPTweakBindObserver.m in Sources */,
 				E1C2BE2F1CFD6A010052172F /* MixpanelExceptionHandler.m in Sources */,
+				6DAFFBB41FB3B14700ACE88A /* MPTweakInline.m in Sources */,
 				E1C2BE4B1CFD6A010052172F /* UIImage+MPImageEffects.m in Sources */,
+				6DAFFBB21FB3B14700ACE88A /* MPTweak.m in Sources */,
 				E123C47F1D1342150015B425 /* MixpanelPeople.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
