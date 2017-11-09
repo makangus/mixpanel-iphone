@@ -139,10 +139,10 @@ static NSString *defaultProjectToken;
         [self executeCachedVariants];
         [self executeCachedEventBindings];
 
-        NSDictionary *remoteNotification = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey];
-        if (remoteNotification) {
-            [self trackPushNotification:remoteNotification event:@"$app_open"];
-        }
+//        NSDictionary *remoteNotification = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey];
+//        if (remoteNotification) {
+//            [self trackPushNotification:remoteNotification event:@"$app_open"];
+//        }
 #endif
         instances[apiToken] = self;
     }
@@ -1043,7 +1043,7 @@ static NSString *defaultProjectToken;
         self.testDesignerGestureRecognizer.minimumPressDuration = 3;
         self.testDesignerGestureRecognizer.cancelsTouchesInView = NO;
 #if TARGET_IPHONE_SIMULATOR
-        self.testDesignerGestureRecognizer.numberOfTouchesRequired = 2;
+        //self.testDesignerGestureRecognizer.numberOfTouchesRequired = 2;
 #else
         self.testDesignerGestureRecognizer.numberOfTouchesRequired = 4;
 #endif
